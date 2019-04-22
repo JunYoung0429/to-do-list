@@ -1,0 +1,47 @@
+body{
+    background-image: url(BG.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+.wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'IBM Plex Mono', monospace;
+}
+.wrap h1{
+    font-size: 3em;
+    color: white;
+}
+input {
+    width: 400px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 2px;
+    background: white;
+    border: none;
+}
+button{
+    height: 35px;
+    font-size: 18px;
+    border-radius: 2px;
+    border: none;
+    width: 100px;
+    background: rgb(90, 156, 161);
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+}
+li{
+    margin: 10px 0px;
+    padding: 5px;
+    background: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: 'Do Hyeon', sans-serif;
+}

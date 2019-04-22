@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet"> 
+</head>
+<body>
+    <div class="wrap">
+        <h1>To do list</h1>
+        <form id="todoForom">
+            <input id="todoInput"><button type="button" onclick="todoList()">Submit</button>
+        </form>
+        <ol id="todoList">
+
+        </ol>
+    </div>
+    <script>
+        function todoList()
+        {
+        var item = document.getElementById('todoInput').value
+        var text = document.createTextNode(item);
+        var newItem = document.createElement("li") //li태그를 만들어서 newItem에 저장
+        newItem.appendChild(text)
+        document.getElementById('todoList').appendChild(newItem);
+        }
+    </script>
+</body>
+</html>
